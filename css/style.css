@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #F3E5D8;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.titulo {
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#texto-eas {
+    font-size: 19px;
+    font-weight: 400;
+    color: #5C5958;
+}
+p{
+    font-size: 19px;
+    font-weight: 400;
+    color: #5C5958;
+}
+.texto-rojo {
+    color: #88425E;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.cont-card {
+    background-color: #FFF7FC;
+    width: 90%;
+    height: 210px;
+    display: flex;
+    /* align-items: start;
+    justify-content: start; */
+    flex-direction: column;
+    padding: 24px 0px 0px 25px;
+    border-radius: 10px;
+
+}
+
+.lista-li {
+    padding-top: 20px;
+    list-style-type: none;
+    /* Quita los puntos originales */
+    padding-left: 20px;
+    /* Para que no quede pegado al borde */
+
+}
+
+.lista-li li {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    /* separación entre punto y texto */
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.lista-li li::before {
+    content: "•";
+    /* El símbolo de punto */
+    color: #88425E;
+    /* Color del punto */
+    display: inline-block;
+    /* width: 1em; */
+    /* Espacio para el punto */
+    margin-left: -1em;
+    margin-top: 6px;
+}
+
+span {
+    color: #514947;
+    font-weight: 700;
+}
+
+.li {
+    line-height: 30px;
+    /* text-align: start; */
+    /* padding-left: 0px; */
+}
+
+.cont-Ingr {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 90%;
+    padding: 0px 24px;
+    gap: 15px;
+}
+
+h2 {
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 26px;
+}
+
+
+
+.lista-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* separación entre punto y texto */
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.lista-ul li::before {
+    content: "•";
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 3px;
+    /* alinea el punto con la primera línea */
+}
+
+.li-item {
+    margin: 0;
+    line-height: 1;
+}
+
+/* hr {
+    background-color: #ECECEC;
+    border: none;
+    height: 2px;
+    width: 90%;
+    margin: 0px 0px;
+} */
+
+.cont-Inst::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #ECECEC;
+        display: inline-block;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+}
+.cont-Inst::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #ECECEC;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+
+}
+
+.cont-Inst {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 90%;
+    padding: 0px 24px;
+    gap: 15px;
+}
+
+.grid-list {
+    list-style: none;
+    counter-reset: step;
+    padding-left: 0;
+}
+
+.step-number {
+    color: hsl(14, 45%, 36%);
+}
+
+.grid-list li {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    /* Espacio fijo para el número */
+    align-items: start;
+    margin-bottom: 1em;
+    margin-left: 10px;
+}
+
+/* .grid-list .step-number {
+    font-weight: bold;
+    color: #555;
+} */
+
+.grid-list li::before {
+    counter-increment: step;
+    content: counter(step) ".";
+    font-weight: bold;
+    margin-right: 0.5em;
+    color: hsl(14, 45%, 36%);
+    /* Oculto porque usamos <span class="step-number"> */
+
+    /* display: none; */
+}
+
+.cont-nut{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0px 24px;
+    gap: 15px;
+}
+
+.cont-nut p{
+    font-size: 17px;
+    max-lines: 2;
+    font-weight: 400;
+}
+table td{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0px 15px 30px;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+.sty-cal{
+    color: hsl(14, 45%, 36%);
+    margin-left: -95px;
+}
+
+
+@media (min-width:700px){
+
+    .container{
+        margin-top: 25px;
+        width: 600px;
+        max-height:1950px;
+        border-radius: 20px;
+    }
+    img{
+        margin-top: 15px;
+        padding: 15px 24px;
+        /* margin-left: 24px; */
+        border-radius: 45px;
+    }
+    .cont-Inst{
+        margin-top: -60px;
+    }
+    .cont-nut{
+        margin-top: -20px;
+    }
+    
+}
